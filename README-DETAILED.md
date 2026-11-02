@@ -47,7 +47,7 @@ Write the month with two digits (`03`, not `3`). The program checks the month as
 
 - The result is **end date minus start date**.
 - If the end date comes before the start date, the result is negative. For example, `15-06-2024` to `01-01-2024` gives `-166 days`.
-- The start day is not counted, so `01-01-2024` to `02-01-2024` gives `1 day`.
+- The start day is not counted, so `01-01-2024` to `02-01-2024` gives `Difference is 1 days`.
 
 ## Known limitations
 
