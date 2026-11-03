@@ -7,6 +7,15 @@ A small command-line Python program that takes two dates and tells you how many 
 - Python 3.6 or newer (it uses f-strings)
 - No third-party packages; only the standard library `datetime` module
 
+## Getting started
+
+Clone the repository and move into it:
+
+```bash
+git clone https://github.com/muaibed/days-calculator.git
+cd days-calculator
+```
+
 ## Usage
 
 Run the script from the project folder:
@@ -36,6 +45,11 @@ If the end date is earlier than the start date, the result is negative.
 
 1. `main()` reads both dates, splits each into day, month and year, and checks that they form a real calendar date.
 2. `calculator()` turns the two strings into `datetime` objects with `datetime.strptime(..., '%d-%m-%Y')`, subtracts them, and returns the number of days.
+
+## Known limitations
+
+- The dates are accepted if either one passes validation, so an invalid first date paired with a valid second date can make the program crash instead of asking again.
+- A month typed with one digit (such as `3`) matches no month, and the program may keep asking for dates without showing an error.
 
 ## Project structure
 
